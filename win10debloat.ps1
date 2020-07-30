@@ -31,10 +31,21 @@ $tweaks = @(
 
 	### External Program Setup
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
-	"InstallAdobe",
+#	"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+#	"InstallMediaPlayerClassic",
+#	"InstallGoogleChrome",
+#	"InstallMozillaFirefox",
+#	"InstallVLCmediaplayer",
+#	"InstallFoxitReader",
+#	"InstallPython3",
+#	"InstallTeamviewer",
+#	"InstallWinSCP",
+#	"InstallWireshark",
+#	"InstallCDBurnerXP",
+#	"InstallIrfanView",
+#	"InstallKiTTY",
 
 	### Windows Apps
 	"DebloatAll",
@@ -161,7 +172,7 @@ $tweaks = @(
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
-	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
+#	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
@@ -224,6 +235,51 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+Function InstallGoogleChrome {
+	Write-Output "Installing Google Chrome"
+	choco install googlechrome -y
+}
+Function InstallMozillaFirefox {
+	Write-Output "Installing Mozilla Firefox"
+	choco install firefox -y
+}
+Function InstallVLCmediaplayer {
+	Write-Output "Installing VLC Media Player"
+	choco install vlc -y
+}
+Function InstallFoxitReader {
+	Write-Output "Installing Foxit Reader"
+	choco install foxitreader -y
+}
+Function InstallPython3 {
+	Write-Output "Installing Python 3.x"
+	choco install python3 -y
+}
+Function InstallTeamviewer {
+	Write-Output "Installing Teamviewer"
+	choco install teamviewer -y
+}
+Function InstallWinSCP {
+	Write-Output "Installing WinSCP"
+	choco install winscp -y
+}
+Function InstallWireshark {
+	Write-Output "Installing Wireshark"
+	choco install wireshark -y
+}
+Function InstallCDBurnerXP {
+	Write-Output "Installing CDBurnerXP"
+	choco install cdburnerxp -y
+}
+Function InstallIrfanView {
+	Write-Output "Installing IrfanView"
+	choco install irfanview -y
+	choco install irfanviewplugins -y	
+}
+Function InstallKiTTY {
+	Write-Output "Installing KiTTY"
+	choco install kitty -y
 }
 
 ##########
